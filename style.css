@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* sheared style */
+.secondary-bg {
+  background-color: rgb(255, 248, 243);
+}
+.text-primary {
+  color: rgb(253, 110, 10);
+}
+.text-align {
+  text-align: center;
+}
+.dark2 {
+  color: rgb(71, 71, 71);
+}
+.btn-primary {
+  border: none;
+  color: white;
+  font-size: 16px;
+  width: 700;
+  border-radius: 7px;
+  padding: 10px 22px;
+  background: rgb(253, 110, 10);
+  cursor: pointer;
+  transition: ease 400ms;
+}
+.btn-primary:hover {
+  background: rgb(211, 119, 48);
+}
+.section-title {
+  color: rgb(24, 24, 24);
+  font-size: 25px;
+  font-weight: 700;
+}
+.section-describtion {
+  color: rgb(117, 117, 117);
+  font-size: 14px;
+}
+.hight {
+  padding-bottom: 25px;
+}
+.hight-top {
+  padding-top: 30px;
+}
+/* ^ sheared style ^ */
+
+.header {
+  background-image: url(images/developer.png), url(images/header_bg.png);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 13%;
+}
+.nav-title {
+  font-size: 35px;
+  width: 800;
+}
+
+nav ul li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+/* banner style  */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px 0 200px;
+}
+.banner-content {
+  max-width: 580px;
+}
+.banner-getting {
+  font-size: 32px;
+  width: 600;
+}
+.banner-title {
+  font-size: 50px;
+  width: 800;
+  margin-bottom: 20px;
+}
+.banner-describtion {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.banner-profile {
+  background-position: center;
+
+  width: 400px;
+}
+#btn-cv {
+  margin-right: 15px;
+  padding: 10px 19px;
+  cursor: pointer;
+}
+/* main styles */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 85px 150px;
+}
+
+/* about section style  */
+#section-title-edit {
+  padding-bottom: 25px;
+}
+
+.about {
+  border-radius: 10px;
+  padding: 120px 100px;
+  text-align: center;
+}
+.about-items {
+  display: flex;
+  justify-content: space-around;
+}
+.about-item {
+  padding-top: 20px;
+}
+.item-title {
+  color: rgb(117, 117, 117);
+}
+.item-describtion {
+  width: 600;
+  color: rgb(71, 71, 71);
+}
+
+/* skill section styles */
+
+.skill-container {
+  display: flex;
+  gap: 20px;
+}
+.skill {
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  width: 200px;
+  height: 310px;
+  padding: 25px;
+}
+.skill img {
+  height: 35px;
+  width: 35px;
+}
+.skill-title {
+  width: 800px;
+  padding-top: 15px;
+  color: rgb(24, 24, 24);
+  font-size: 16px;
+}
+.skill-describtion {
+  padding-top: 25px;
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+}
+
+/* Resume section styles */
+.resume-container {
+  display: flex;
+  gap: 24px;
+}
+
+.resume-column-title {
+  color: rgb(71, 71, 71);
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+.experience-title {
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(71, 71, 71);
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.experience-subtitle {
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.experience-describtion {
+  color: rgb(117, 117, 117);
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+/* Footer Section Styles */
+
+footer {
+  display: flex;
+  padding: 130px 250px;
+  gap: 100px;
+}
+.footer-describtion {
+  font-size: 14px;
+  padding-top: 25px;
+  color: rgb(71, 71, 71);
+}
+.icons a i {
+  font-size: 30px;
+  color: rgb(71, 71, 71);
+  margin-top: 10px;
+  margin-right: 8px;
+  transition: 0.5s ease;
+}
+.icons a:hover i {
+  transform: scale(1.3);
+}
+form input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding-left: 9px;
+}
+form textarea {
+  padding-left: 9px;
+}
+form #submit-btn {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* responsive media queary */
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .skill-container {
+    flex-direction: column;
+  }
+}
