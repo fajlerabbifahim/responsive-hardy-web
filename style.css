@@ -6,22 +6,16 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.header {
-  border: 2px solid red;
-}
+/* .header {
+  overflow: hidden;
+} */
 
-nav,
-.about,
-.skill-container,
-.skill,
-.resume-container,
-footer,
-.skills,
-.resume {
+.skills {
+  overflow: hidden;
 }
 /* sheared style */
 .secondary-bg {
-  background-color: rgb(255, 248, 243);
+  background-color: #fff8f3;
 }
 .text-primary {
   color: rgb(253, 110, 10);
@@ -167,10 +161,18 @@ main {
   width: 200px;
   height: 310px;
   padding: 25px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 500ms ease;
+}
+.skill:hover {
+  transform: scale(1.1);
+  background-color: #fff8f3;
 }
 .skill img {
   height: 35px;
   width: 35px;
+  border-radius: 4px;
 }
 .skill-title {
   width: 800px;
@@ -188,7 +190,7 @@ main {
 .resume-container {
   display: flex;
   gap: 24px;
-  pad: calc(100% - 30px);
+  padding: 0 20px;
 }
 
 .resume-column-title {
